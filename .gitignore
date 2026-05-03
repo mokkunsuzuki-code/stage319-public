@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+data/
+proofs/
+*.db
+*.sqlite
+*.sqlite3
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+keys/

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>REMEDA Stage319 Public</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #020617, #0f172a, #1e293b);
+  color: white;
+}
+.container {
+  max-width: 920px;
+  margin: auto;
+  padding: 64px 24px;
+}
+.badge {
+  display: inline-block;
+  background: #22c55e;
+  color: #020617;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: bold;
+}
+.card {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 18px;
+  padding: 26px;
+  margin-top: 24px;
+}
+h1 { font-size: 44px; }
+p, li { color: #cbd5e1; line-height: 1.8; }
+pre {
+  background: #020617;
+  color: #bbf7d0;
+  padding: 18px;
+  border-radius: 12px;
+  overflow-x: auto;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<span class="badge">Stage319 Public</span>
+
+<h1>AI脆弱性を、証明URLへ。</h1>
+
+<p>
+この公開ページは、REMEDA Stage319 の公開説明レイヤーです。<br>
+本物のAPIキー発行・検証ロジック・証明生成コアは非公開サービスとして分離します。
+</p>
+
+<div class="card">
+<h2>公開するもの</h2>
+<ul>
+<li>製品コンセプト</li>
+<li>AI脆弱性 → 検証 → 証明URL の流れ</li>
+<li>APIキーによるSaaS化の説明</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>公開しないもの</h2>
+<ul>
+<li>APIキー発行バックエンド</li>
+<li>検証エンジン</li>
+<li>証明JSON生成ロジック</li>
+<li>APIキーDB</li>
+<li>課金・制限ロジック</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Proof Flow</h2>
+<pre>AI vulnerability result
+→ API key
+→ Verification
+→ Proof JSON
+→ Proof URL</pre>
+</div>
+
+</div>
+</body>
+</html>

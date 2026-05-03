@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>AI Vulnerability Proof Demo</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #020617, #0f172a, #1e293b);
+  color: white;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 24px;
+}
+.badge {
+  background: #22c55e;
+  color: #020617;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: bold;
+}
+h1 { font-size: 40px; }
+.card {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 18px;
+  padding: 24px;
+  margin-top: 24px;
+}
+pre {
+  background: #020617;
+  color: #bbf7d0;
+  padding: 18px;
+  border-radius: 12px;
+}
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 20px;
+  background: #22c55e;
+  color: #020617;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<span class="badge">LIVE DEMO</span>
+
+<h1>AI脆弱性 → 証明URLへ</h1>
+
+<div class="card">
+<h2>入力（AI検出結果）</h2>
+<pre>
+SQL Injection detected in login API
+confidence: 0.92
+</pre>
+</div>
+
+<div class="card">
+<h2>検証</h2>
+<pre>
+Integrity: OK
+Execution: Verified (CI)
+Identity: Verified (GPG/Sigstore)
+Time: Timestamped (Bitcoin)
+</pre>
+</div>
+
+<div class="card">
+<h2>結果（証明URL）</h2>
+<pre>
+https://mokkunsuzuki-code.github.io/stage318/proof/sample-proof.json
+</pre>
+</div>
+
+<div class="card">
+<h2>何が変わるか</h2>
+<p>
+AI結果をそのまま提出するのではなく、<br>
+検証された証明として提出できるようになります。
+</p>
+</div>
+
+<a class="button" href="get-api-key.html">証明URLを発行する</a>
+<a class="button" href="index.html">← LPに戻る</a>
+
+
+<div class="card">
+<h2>実際の利用シーン</h2>
+<p>
+・AIが検出した脆弱性をセキュリティチームに提出<br>
+・外部ベンダーへの報告資料として使用<br>
+・監査・コンプライアンス証明として活用
+</p>
+</div>
+
+</div>
+</body>
+</html>
