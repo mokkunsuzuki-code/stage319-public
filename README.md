@@ -1,42 +1,57 @@
-# REMEDA Stage319 Public
+# REMEDA Stage319
 
-Stage319 Public is the public-facing explanation and demo layer for REMEDA.
+AI vulnerabilities → Verification → Proof URL
 
-REMEDA converts AI-detected vulnerabilities into verifiable proof URLs.
+REMEDA converts AI-detected vulnerabilities into verifiable, reproducible proof.
 
-## What this public repository shows
+## What you can do
 
-- Product concept
-- AI vulnerability proof flow
-- API key usage model
-- Proof URL concept
-- Monetization direction
+- Generate API keys
+- Submit AI vulnerability results
+- Get verification decisions
+- Generate proof URLs
+- Measure trust score
 
-## What is not included
+## Live API
 
-The private verification core is not included in this public repository.
+https://stage302.onrender.com/api/health
 
-Excluded private components:
+## Example
 
-- API key issuing backend
-- Verification engine
-- Proof generation logic
-- API key database
-- Proof storage
-- Billing logic
+```bash
+curl -X POST https://stage302.onrender.com/api/keys
 
-## Flow
+curl -X POST https://stage302.onrender.com/api/verify \
+  -H "x-api-key: YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"ai_result":"SQL Injection detected","confidence":0.92}'
+Flow
 
-AI vulnerability result  
-→ API key  
-→ Verification  
-→ Proof URL  
-→ External submission / audit
+AI vulnerability result
+→ API key
+→ Verification
+→ Proof JSON
+→ Proof URL
 
-## Stage
+Why this matters
+
+AI outputs are not trustworthy by default.
+
+REMEDA makes them:
+
+Verifiable
+Reproducible
+Measurable
+Architecture
+
+Public Layer (this repo)
+→ Core API (private)
+→ Proof URL
+
+Stage
 
 319 Public
 
-## License
+License
 
 MIT License (c) 2025 Motohiro Suzuki
